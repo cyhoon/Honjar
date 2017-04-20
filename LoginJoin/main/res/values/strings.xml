@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">honjar</string>
+    <string name="title_activity_join">join</string>
+    <string name="title_activity_member_join">MemberJoin</string>
+</resources>
