@@ -45,8 +45,8 @@ public class MemberJoin extends AppCompatActivity {
         });
 
     }
-
-    class ConnectThread extends Thread {
+}
+public class ConnectThread extends Thread {
 
         String urlStr;
 
@@ -96,5 +96,3 @@ public class MemberJoin extends AppCompatActivity {
 
 
     }
-
-}
