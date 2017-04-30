@@ -1,0 +1,60 @@
+﻿심기부분 API
+
+변수
+
+private ArrayList<Uri> ImageUriList = new ArrayList<>();
+
+	선택한 이미지의 Uri를 저장할 리스트 
+private ArrayList<String> ImageList = new ArrayList<>();
+
+	선택한 이미지를 String형으로 변환 후 저장할 리스트	
+
+private byte[] ImageByteArray = null;
+
+	이미지를 byte[]형으로 저장할 배열
+
+private Date SelectDate;
+
+	datepicker에서 선택한 날짜를 보관할 변수
+
+함수
+
+public boolean compareDate()
+
+	SelectDate를 현재 날짜와 비교한다.
+ 	
+	현재 날짜보다 선택한 날짜가 미래이면 true 반환, 과거이거나 같은 날이면 false 반환.
+
+public void MultipleSelected(Intent data)
+	
+	사진 여러개 선택시 다수의 사진을 모두 저장 해준다.
+
+	인자로 사진을 선택하기 위해 사용한 Intent를 넣어준다.
+
+public void SingleSelected(Intent data)
+
+	사진을 한개만 저장 해준다.
+
+	인자로 사진을 선택하기 위해 사용한 Intent를 넣어준다.
+
+public byte[] getImageByteArray()
+
+	ImageByteArray 배열을 반환한다.
+
+public Date getSelectDate()
+
+	SelectDate 값 반환
+
+public void setSelectDate(Date selectDate)
+
+	SelectDate에 datepicker에서 선택한 날짜를 저장
+
+public void addImageList(byte[] byteArray)
+
+	String형 으로 byteArray를 변환 후, ImageList에 추가 해준다.
+
+public void sendData(String UserId, String TagId, String Name,Date ExpireDate, ArrayList<String> ImageList, double Latitude, double Longitude)
+
+	서버에 정보 보내준다.
+	
+	사용자 아이디, 태그 할(친구) 아이디, 캡슐 이름, 열리는 날짜, 이미지 리스트, latitude, longitude 를 인자로 준다.
