@@ -53,7 +53,7 @@ public void addImageList(byte[] byteArray)
 
 	String형 으로 byteArray를 변환 후, ImageList에 추가 해준다.
 
-public void sendData(String UserId, String TagId, String Name,Date ExpireDate, ArrayList<String> ImageList, double Latitude, double Longitude)
+public void sendData(String UserId, String TagId, String Name,Date ExpireDate, byte[][] ImageList, double Latitude, double Longitude)
 
 	서버에 정보 보내준다.
 	
