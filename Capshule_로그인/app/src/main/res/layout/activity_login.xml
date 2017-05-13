@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.androidtown.capshule.Login"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundColor" >
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/emailInput"
+        android:layout_centerHorizontal="true"
+        android:hint="전화번호:"
+        android:layout_marginTop="151dp" />
+
+    <TextView
+        android:text="도움이 필요하세요?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/HelpText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:hint="비밀번호:"
+        android:layout_below="@+id/emailInput"
+        android:layout_alignLeft="@+id/emailInput"
+        android:layout_alignStart="@+id/emailInput"
+        android:layout_alignRight="@+id/emailInput"
+        android:layout_alignEnd="@+id/emailInput" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="Log in"
+        android:id="@+id/loginButton"
+        android:textAllCaps="false"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4" />
+
+    <ImageView
+        android:layout_width="128px"
+        android:layout_height="128px"
+        app:srcCompat="@drawable/logologin"
+        android:layout_marginTop="51dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TimeCapshule에 가입하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/GotoReg"
+        android:layout_above="@+id/HelpText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
