@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="theme-color" content="#4e8ef7">
+
+  <style>
+    @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+    * {
+      font-family: 'NanumSquare', sans-serif;
+      font-weight: 800;
+    }
+
+    img {
+      width: 40%;
+      margin-left: 30%;
+    }
+
+    #logoDiv {
+      width: 100%;
+      height: 40%;
+      margin-top: 25%;
+    }
+
+    #logoHead {
+      font-size: 1.6em;
+      text-align: center;
+      line-height: -1em;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+
+    #logoSub {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    .mainBtn {
+      width: 94%;
+      height: 7.5%;
+      background-color: black;
+      margin: 0 5% 8% 5%;
+      border-radius: 8px;
+      padding-top: 4%;
+    }
+
+    #btnLogin {
+    }
+
+    .mainBtnText {
+      color: white;
+      text-align: center;
+    }
+
+
+  </style>
+
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<ion-content padding>
+  <div id="logoDiv">
+    <img src="\logo.png"/>
+    <h3 id="logoHead">Time Capsule</h3>
+        <h3 id="logoSub">추억을 캡슐로</h3>
+  </div>
+
+    <div class="mainBtn" id="btnLogin">
+      <h3 class="mainBtnText">로그인 하러가기</h3>
+    </div>
+    <div class="mainBtn" id="btnSignin">
+      <h3 class="mainBtnText">회원가입 하러가기</h3>
+    </div>
+</ion-content>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+</body>
+</html>
